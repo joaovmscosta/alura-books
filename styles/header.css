@@ -12,6 +12,7 @@
     background-color: var(--cor-de-fundo2);
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 .container{
@@ -22,3 +23,48 @@
 .container__imagem{
     padding: 1em;
 }
+
+.lista-menu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 60vw;
+}
+
+/*ENTENDA
+    :checked -> pseudo-classe para verificar se está marcado ou não
+    ~ "tchio" -> Elemento combinador funciona como AND do JS.
+*/
+.container__botao:checked~.lista-menu{
+    display: block;
+
+}
+
+.container__botao{
+    display: none;
+}
+
+.lista-menu__titulo, .lista-menu__item{
+    padding: 1em;
+    background-color: var(--cor-de-fundo2);
+}
+
+.lista-menu__titulo{
+    color: var(--cor-texto);
+    font-weight: 700;
+}
+
+.lista-menu__link{
+    background: var(--cor-degrade);
+    /*Os valores abaixo se aplicam a navegadores.*/
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;/*Será aplicado ao texto e não a fonte em si*/
+    text-transform: uppercase;
+}
+
+.lista-menu__item:hover{
+    background-color: var(--cor-degrade);
+    transition-duration: .2s;
+}
+

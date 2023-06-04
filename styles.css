@@ -1,11 +1,22 @@
 @import url('./styles/header.css');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@300;400;500;700&display=swap');
+
 
 /*ROOT*/
-root{
-    --cor-de-fundo: #EBECEE;
+:root{
+    --cor-de-fundo: #E5E5E5;
     --cor-de-fundo2: #ffffff;
+    --cor-texto:#EB9B00;
+    --cor-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+
+    /* FONTES */
+    --font-principal: 'Poppins', sans-serif;
 }
 
 body{
     background-color: var(--cor-de-fundo);
+    font-family: var(--font-principal);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
 }
