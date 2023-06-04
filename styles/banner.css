@@ -14,3 +14,23 @@
     font-weight: 500;
     margin: 1em 0;
 }
+
+.banner__pesquisa{
+    background-color: transparent;
+    border: 1px solid var(--cor-texto-principal);
+    color: var(--cor-texto-principal);
+    border-radius: 24px;
+    padding: 1em;
+    width: 100%;
+}
+
+/*Acessando o placeholder*/
+.banner__pesquisa::placeholder{
+    color: var(--cor-texto-principal);
+    font-family: var(--font-principal);
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    background: url('../img/Pesquisa.svg') no-repeat;
+    background-position: 1em;
+}
