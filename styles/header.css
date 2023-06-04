@@ -50,7 +50,7 @@
 }
 
 .lista-menu__titulo{
-    color: var(--cor-texto);
+    color: var(--cor-texto-secundario);
     font-weight: 700;
 }
 
@@ -64,7 +64,6 @@
 }
 
 .lista-menu__item:hover{
-    background-color: var(--cor-degrade);
-    transition-duration: .2s;
+    background-color: var(--cor-de-fundo);
+    transition-duration: .1s;
 }
-
