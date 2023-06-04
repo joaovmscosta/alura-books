@@ -1,12 +1,18 @@
-@import url('./styles/header.css');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@300;400;500;700&display=swap');
-
+@import url('./styles/header.css');
+@import url('./styles/banner.css');
 
 /*ROOT*/
 :root{
+    /*COR DE FUNDO*/
     --cor-de-fundo: #E5E5E5;
     --cor-de-fundo2: #ffffff;
-    --cor-texto:#EB9B00;
+
+    /* COR DE TEXTO*/
+    --cor-texto-principal: #ffffff;
+    --cor-texto-secundario:#EB9B00;
+
+    /* COR PARA QUALQUER ELEMENTO*/
     --cor-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
 
     /* FONTES */
