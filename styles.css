@@ -8,10 +8,12 @@
     /*COR DE FUNDO*/
     --cor-de-fundo: #E5E5E5;
     --cor-de-fundo2: #ffffff;
+    --cor-de-fundo-botao: #EB9B00;
 
     /* COR DE TEXTO*/
     --cor-texto-principal: #ffffff;
     --cor-texto-secundario:#EB9B00;
+    --cor-texto-ternario: #002f52;
 
     /* COR PARA QUALQUER ELEMENTO*/
     --cor-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
