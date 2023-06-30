@@ -162,17 +162,106 @@
       </div>
     </section>
 
+    <!--SECTION CARROSSEL 2-->
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">mais vendidos</h2>
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <!-- Paginação dos elementos-->
+          <div class="swiper-pagination"></div>
+  
+          <div class="swiper-wrapper">
+            <!-- Slides do carrossel -->
+            <div class="swiper-slide">
+              <img
+                src="./img/ReactNative.svg"
+                alt="Livro sobre lógica de programação com Portugol da alurabooks"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./img/Guia Front-end.svg"
+                alt="Livro sobre liderança em design da alurabooks"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./img/ApacheKafka.svg"
+                alt="Livro lógica de programação com Portugol"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./img/Liderança.svg"
+                alt="Livro lógica de programação com Portugol"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./img/Angular.svg"
+                alt="Livro lógica de programação com Portugol"
+              />
+            </div>
+            ...
+          </div>
+          <!-- If we need pagination -->
+  
+          <!-- Botoes de navegação -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+  
+        <div class="card">
+          <!-- 1ª LINHA -->
+          <div class="card__descricao">
+            <!-- 1ª COLUNA-->
+            <div class="descricao">
+              <span class="descricao__detalhe"></span>
+              <h3 class="descricao__titulo">Autora do Mês"</h3>
+              <h2 class="descricao__titulo-autora">Juliana Agarikov</h2>
+              <p class="descricao__texto">
+                Analista de sistemas e escritora, Juliana é especialista em Front-End
+              </p>
+            </div>
+            <!-- 2ª COLUNA-->
+            <img src="./img/Perfil-escritora.png" alt="Foto de Juliana Agarikov" class="descricao__imagem" />
+          </div>
+  
+          <!-- 2ª LINHA -->
+          <div class="card__botoes">
+            <!--1ª COLUNA-->
+            <ul class="botoes">
+              <li class="botoes_item">
+                <img src="./img/Favoritos.svg" alt="Favoritar um livro" />
+              </li>
+              <li class="botoes_item">
+                <img
+                  src="./img/Compras.svg"
+                  alt="Adicionar ao carrinho de Compras"
+                />
+              </li>
+            </ul>
+            <!--2ª COLUNA-->
+            <a href="#" class="botoes__ancora">Saiba mais</a>
+          </div>
+        </div>
+        </div>
+      </section>
+
     <!--SCRIPTS-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script>
       const swiper = new Swiper(".swiper", {
         spaceBetween: 10,
-        slidesPerView: 3,
+        slidesPerView: 2,
         pagination: {
           el: ".swiper-pagination",
           type: "bullets",
+          color:"#002f52",
         },
       });
     </script>
+
   </body>
 </html>
