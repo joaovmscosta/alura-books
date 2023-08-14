@@ -1,31 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@300;400;500;700&display=swap');
-@import url('./styles/header.css');
-@import url('./styles/banner.css');
-@import url('./styles/carrossel.css');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@300;400;500;700&display=swap");
+@import url("./styles/header.css");
+@import url("./styles/banner.css");
+@import url("./styles/carrossel.css");
+@import url("./styles/topicos.css");
 
 /*ROOT*/
-:root{
-    /*COR DE FUNDO*/
-    --cor-de-fundo: #E5E5E5;
-    --cor-de-fundo2: #ffffff;
-    --cor-de-fundo-botao: #EB9B00;
+:root {
+  /*COR DE FUNDO*/
+  --cor-de-fundo: #e5e5e5;
+  --cor-de-fundo2: #ffffff;
+  --cor-de-fundo-botao: #eb9b00;
 
-    /* COR DE TEXTO*/
-    --cor-texto-principal: #ffffff;
-    --cor-texto-secundario:#EB9B00;
-    --cor-texto-ternario: #002f52;
+  /* COR DE TEXTO*/
+  --cor-texto-principal: #ffffff;
+  --cor-texto-secundario: #eb9b00;
+  --cor-texto-ternario: #002f52;
 
-    /* COR PARA QUALQUER ELEMENTO*/
-    --cor-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+  /* COR PARA QUALQUER ELEMENTO*/
+  --cor-degrade: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%);
 
-    /* FONTES */
-    --font-principal: 'Poppins', sans-serif;
+  /* FONTES */
+  --font-principal: "Poppins", sans-serif;
 }
 
-body{
-    background-color: var(--cor-de-fundo);
-    font-family: var(--font-principal);
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
+body {
+  background-color: var(--cor-de-fundo);
+  font-family: var(--font-principal);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
 }
