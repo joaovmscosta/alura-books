@@ -51,7 +51,27 @@
 
       <!--MENU LAYOUT 1024-->
       <ul class="opcoes">
-        <li class="opcoes__item">categoria</li>
+        <input type="checkbox" id="opcoes-menu" class="opcoes__botao">
+        <label for="opcoes-menu">
+          <li class="opcoes__item">categoria</li>
+        </label>
+        <ul class="lista-menu">
+          <li class="lista-menu__item">
+            <a href="" class="lista-menu__link">Programação</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="" class="lista-menu__link">Front-End</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="" class="lista-menu__link">Infraestrutura</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="" class="lista-menu__link">Business</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="" class="lista-menu__link">Design e UX</a>
+          </li>
+        </ul>
         <li class="opcoes__item"><a href="#" class="opcoes__link">favoritos</a></li>
         <li class="opcoes__item"><a href="#" class="opcoes__link">minha estante</a></li>
       </ul>
@@ -60,14 +80,14 @@
         <a href="#">
           <img
             src="img/Favoritos.svg"
-            class="container__imagem"
+            class="container__imagem--favoritos"
             alt="Meus favoritos"
         /></a>
         <a class="container__imagem" href="#"
-          ><img src="img/Compras.svg" alt="Carrinho de compras"
+          ><img class="container__imagem--compras" src="img/Compras.svg" alt="Carrinho de compras"
         /></a>
         <a class="container__imagem" href="#"
-          ><img src="img/Usuário.svg" alt="Meu perfil"
+          ><img class="container__imagem--perfil" src="img/Usuário.svg" alt="Meu perfil"
         /></a>
       </div>
     </header>
