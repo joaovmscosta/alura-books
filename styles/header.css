@@ -1,69 +1,97 @@
-.cabecalho__menu-hamburguer{
-    background-image: url('../img/Menu.svg');
-    background-position: center;
-    background-repeat: no-repeat;
-    display: inline-block;
-    height: 24px;
-    width: 24px;
+.cabecalho__menu-hamburguer {
+  background-image: url("../img/Menu.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 24px;
+  width: 24px;
 }
 
-.cabecalho{
-    align-items: center;
-    background-color: var(--cor-de-fundo2);
-    display: flex;
-    justify-content: space-between;
-    position: relative;
+.cabecalho {
+  align-items: center;
+  background-color: var(--cor-de-fundo2);
+  display: flex;
+  justify-content: space-between;
+  position: relative;
 }
 
-.container{
-    align-items: center;
-    display: flex;
+.container {
+  align-items: center;
+  display: flex;
 }
 
-.container__imagem{
-    padding: 1em;
+.container__imagem {
+  padding: 1em;
 }
 
-.lista-menu{
-    display: none;
-    position: absolute;
-    top: 100%;
-    width: 60vw;
+.lista-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  width: 60vw;
 }
 
 /*ENTENDA
     :checked -> pseudo-classe para verificar se está marcado ou não
     ~ "tchio" -> Elemento combinador funciona como AND do JS.
 */
-.container__botao:checked~.lista-menu{
+.container__botao:checked ~ .lista-menu {
+  display: block;
+}
+
+.container__botao {
+  display: none;
+}
+
+.lista-menu__titulo,
+.lista-menu__item {
+  padding: 1em;
+  background-color: var(--cor-de-fundo2);
+}
+
+.lista-menu__titulo {
+  color: var(--cor-texto-secundario);
+  font-weight: 700;
+}
+
+.lista-menu__link {
+  background: var(--cor-degrade);
+  /*Os valores abaixo se aplicam a navegadores.*/
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /*Será aplicado ao texto e não a fonte em si*/
+  text-transform: uppercase;
+}
+
+.lista-menu__item:hover {
+  background-color: var(--cor-de-fundo);
+  transition-duration: 0.1s;
+}
+
+.container__titulo {
+  display: none;
+}
+
+.opcoes {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .container__titulo,
+  .container__titulo--negrito {
+    font-family: var(--font-secundaria);
+    font-size: 2rem;
+  }
+
+  .container__titulo {
     display: block;
-
-}
-
-.container__botao{
-    display: none;
-}
-
-.lista-menu__titulo, .lista-menu__item{
-    padding: 1em;
-    background-color: var(--cor-de-fundo2);
-}
-
-.lista-menu__titulo{
-    color: var(--cor-texto-secundario);
+    font-weight: 400;
+  }
+  .container__titulo--negrito {
     font-weight: 700;
-}
+  }
 
-.lista-menu__link{
-    background: var(--cor-degrade);
-    /*Os valores abaixo se aplicam a navegadores.*/
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;/*Será aplicado ao texto e não a fonte em si*/
-    text-transform: uppercase;
-}
-
-.lista-menu__item:hover{
-    background-color: var(--cor-de-fundo);
-    transition-duration: .1s;
+  .cabecalho__menu-hamburguer {
+    display: none;
+  }
 }
