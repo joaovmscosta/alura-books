@@ -1,0 +1,10 @@
+.rodape__titulo {
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 1.5rem 2rem;
+  background-color: var(--cor-de-fundo2);
+}
+
+hr {
+margin: 0;
+}
