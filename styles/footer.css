@@ -17,17 +17,34 @@ hr {
 }
 
 @media screen and (min-width: 1024px) {
+  .lista-rodape {
+    
+  }
+
   .rodape {
     display: flex;
     justify-content: space-around;
   }
 
-  .lista-rodape {
-    display: block;
-  }
-
   .lista-rodape__item {
     display: flex;
     align-items: center;
+    margin: 0.6rem 0;
+  }
+
+  .lista-rodape__link {
+    text-decoration: none;
+    color: var(--cor-texto-quaternario);
+    margin-left: 0.5rem;
+  }
+
+  .lista-rodape__titulo {
+    font-size: 14px;
+    color: var(--cor-texto-5);
+    text-transform: uppercase;
+  }
+
+  .rodape__titulo {
+    font-size: 24px;
   }
 }

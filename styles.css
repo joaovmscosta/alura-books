@@ -18,6 +18,8 @@
   --cor-texto-principal: #ffffff;
   --cor-texto-secundario: #eb9b00;
   --cor-texto-ternario: #002f52;
+  --cor-texto-quartenario: #474646;
+  --cor-texto-5: #858585;
 
   /* COR PARA QUALQUER ELEMENTO*/
   --cor-degrade: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%);
