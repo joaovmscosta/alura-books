@@ -1,5 +1,6 @@
 .rodape {
   background-color: var(--cor-de-fundo2);
+  margin: 1em;
 }
 .rodape__titulo {
   font-size: 1rem;
@@ -17,13 +18,13 @@ hr {
 }
 
 @media screen and (min-width: 1024px) {
-  .lista-rodape {
-    
-  }
-
   .rodape {
     display: flex;
     justify-content: space-around;
+  }
+  
+  .lista-rodape {
+    display: block;
   }
 
   .lista-rodape__item {
