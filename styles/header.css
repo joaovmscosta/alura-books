@@ -87,6 +87,10 @@
   text-transform: uppercase;
 }
 
+.container__descricao{
+  display: none;
+}
+
 @media screen and (min-width: 1024px) {
   .cabecalho {
     justify-content: space-evenly;
@@ -114,8 +118,7 @@
     display: flex;
   }
 
-  .container__imagem--favoritos,
-  .container__imagem--perfil {
+  .container__imagem--favoritos {
     display: none;
   }
 
@@ -132,4 +135,16 @@
   .opcoes__botao {
     display: none;
   }
+}
+
+@media screen and (min-width: 1728px) {
+  .container__descricao{
+    display: block;
+  }
+
+  .container__suporte{
+    display: flex;
+    align-items: center;
+  }
+  
 }
