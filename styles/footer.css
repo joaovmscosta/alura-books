@@ -1,6 +1,5 @@
 .rodape {
   background-color: var(--cor-de-fundo2);
-  margin: 1em;
 }
 .rodape__titulo {
   font-size: 1rem;
@@ -22,7 +21,7 @@ hr {
     display: flex;
     justify-content: space-around;
   }
-  
+
   .lista-rodape {
     display: block;
   }
@@ -47,5 +46,16 @@ hr {
 
   .rodape__titulo {
     font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 1728px) {
+  .lista-rodape {
+    border-left: 2px solid var(--cor-de-fundo);
+    padding-left: 1em;
+  }
+
+  .rodape {
+    padding: 3em 0;
   }
 }
