@@ -20,6 +20,24 @@
   display: flex;
 }
 
+/*
+  ATENÇÃO!
+  combinador ~ (til)
+    -> procura algum outro elemento seguido dele com nome da classe informada.
+    busca todos os irmão com aquele mesmo nome de classe.
+  
+  combinador > (Maior Que)
+  -> procura o filho direto do elemento pai, ou seja, filho único dentro da classe
+*/
+
+.container__botao:checked ~ .container__rotulo > .cabecalho__menu-hamburguer {
+  background-image: url("../img/menu-aberto.svg");
+}
+
+.container__botao:checked ~ .container__rotulo {
+  background: var(--cor-degrade);
+}
+
 .container__imagem {
   padding: 1em;
 }
@@ -134,6 +152,23 @@
 
   .opcoes__botao {
     display: none;
+  }
+
+  .opcoes__botao:checked ~ .opcoes__rotulo > .opcoes__item {
+    background: var(--cor-degrade);
+    color: var(--cor-texto-principal);
+  }
+
+  .opcoes__item {
+    padding: 2em 1em;
+  }
+
+  .lista-menu__item:hover {
+    background: var(--cor-degrade);
+  }
+
+  .lista-menu__item > .lista-menu__link {
+    -webkit-text-fill-color: var(--cor-texto-principal);
   }
 }
 
